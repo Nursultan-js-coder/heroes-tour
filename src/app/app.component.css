@@ -1,7 +1,8 @@
 .app{
   width:50%;
-  border:1px solid red;
   padding:20px;
+  background-color: rgba(239, 237, 237, 0.4);
+  border-radius:8px;
 
 }
 
