@@ -1,3 +1,10 @@
+.app{
+  width:50%;
+  border:1px solid red;
+  padding:20px;
+
+}
+
 h1 {
   margin-bottom: 0;
 }

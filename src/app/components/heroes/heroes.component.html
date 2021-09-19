@@ -1,8 +1,8 @@
 <h2>My Heroes</h2>
 <app-hero-search ></app-hero-search>
 <div class="addForm">
-<input  [(ngModel)]="newHero.name" name="name"/>
-<button (click)="addNewHero()">add</button>
+<input  [(ngModel)]="newHero.name" name="name" placeholder="name ... "/>
+<button (click)="addNewHero()">add hero</button>
 </div>
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
