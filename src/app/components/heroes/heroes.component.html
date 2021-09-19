@@ -1,0 +1,20 @@
+<h2>My Heroes</h2>
+<app-hero-search ></app-hero-search>
+<div class="addForm">
+<input  [(ngModel)]="newHero.name" name="name"/>
+<button (click)="addNewHero()">add</button>
+</div>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes"
+  [class.selected]="hero === selectedHero"
+  >
+    <a routerLink="/heroes/{{hero.id}}">
+    <span class="badge">{{hero.id}}</span>
+    {{hero.name}}
+    </a>
+    <button (click) = "deleteHero(hero)">x</button>
+
+  </li>
+
+</ul>
+
